@@ -1,12 +1,13 @@
 import java.util.Random;
 import java.util.Scanner;
+import java.util.Arrays;
 public class menuDrivenConsole{
     public static void main(String[] args) {
-        
+        displayMenu();
     }
 
 
-    public int[] createArr(int num){
+    public static int[] createArr(int num){
 
         Random rand = new Random();
         
@@ -49,7 +50,7 @@ public class menuDrivenConsole{
     }
     
 
-    public int[] AvgDiff(int[] array) {
+    public static int[] AvgDiff(int[] array) {
         int[] AvgDiff = new int[array.length];
 
         int sum = 0;
@@ -67,7 +68,7 @@ public class menuDrivenConsole{
     }
 
 
-    public int oddSum(int[] array) {
+    public static int oddSum(int[] array) {
         int sum = 0;
         
         for(int i = 0; i<array.length ; i++) {
@@ -80,7 +81,7 @@ public class menuDrivenConsole{
     }
 
 
-    public int evenSum(int[] array) {
+    public static int evenSum(int[] array) {
         
         int sum = 0;
         
@@ -94,7 +95,7 @@ public class menuDrivenConsole{
     }
 
 
-    public void displayMenu() {
+    public static void displayMenu() {
 
         Scanner in = new Scanner(System.in);
         System.out.print("Enter the length of the array that will contain random integers in the range [0,100]: ");
