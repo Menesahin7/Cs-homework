@@ -46,4 +46,49 @@ public class menuDrivenConsole{
 
         return max;
     }
+    
+
+    public int[] AvgDiff(int[] array) {
+        int[] AvgDiff = new int[array.length];
+
+        int sum = 0;
+        for(int i = 0; i<array.length ; i++) {
+            sum += array[i];
+        }
+
+        int average = sum/array.length;
+
+        for(int i = 0; i<array.length ; i++) {
+            AvgDiff[i] = array[i] - average;
+        }
+
+        return AvgDiff;
+    }
+
+
+    public int oddSum(int[] array) {
+        int sum = 0;
+        
+        for(int i = 0; i<array.length ; i++) {
+            if(i%2 != 0) {
+                sum += array[i]; 
+            }
+        }
+
+        return sum;
+    }
+
+
+    public int evenSum(int[] array) {
+        
+        int sum = 0;
+        
+        for(int i = 0; i<array.length ; i++) {
+            if(i%2 == 0) {
+                sum += array[i]; 
+            }
+        }
+
+        return sum;
+    }
 }
