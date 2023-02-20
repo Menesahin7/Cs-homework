@@ -91,4 +91,57 @@ public class menuDrivenConsole{
 
         return sum;
     }
+
+
+    public void displayMenu() {
+
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter the length of the array that will contain random integers in the range [0,100]: ");
+
+        int length = in.nextInt();
+
+        int[] array = createArr(length);
+
+        System.out.println("Your array is:    " + Arrays.toString(array));
+
+
+        Boolean KeepGoing = true;
+
+        while(KeepGoing) {
+
+            System.out.println("-----------------------------\n1-Find the minimum value of the array\n2-Find the maximum value of the array\n"
+            + "3-Display how each element of the array differs from the average\n4-Find the sum of elements with odd-numbered indexes\n5-Find the sum of elements with even-numbered indexes\n6-Exit!");
+
+
+            int input = in.nextInt();
+
+            if(input==1) {
+                System.out.println("Minimum value of this array is: " + findMin(array));
+            }
+
+            else if(input==2) {
+                System.out.println("Maximum value of this array is: " + findMax(array));
+            }
+
+            else if(input==3) {
+                System.out.println(Arrays.toString(AvgDiff(array)));
+            }
+
+            else if(input==4) {
+                System.out.println("Sum of the elements with odd numbers is: " + oddSum(array));
+            }
+
+            else if(input==5) {
+                System.out.println("Sum of the elements with even numbers is: " + evenSum(array));
+            }
+
+            else if(input==6) {
+                KeepGoing = false;
+                System.out.println("Bye");
+            }
+
+        }
+
+        in.close();
+    }
 }
