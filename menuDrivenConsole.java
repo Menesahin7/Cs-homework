@@ -1,15 +1,10 @@
 import java.util.Random;
 public class menuDrivenConsole{
     public static void main(String[] args) {
-        int[] hello ={1,2,2,4,5,7};
-        System.out.println(findMin(hello)); 
-        System.out.println(findMax(hello)); 
+        
     }
 
 
-<<<<<<< HEAD
-    public static int findMin(int[] numbers)
-=======
     public int[] createArr(int num){
 
         Random rand = new Random();
@@ -26,8 +21,7 @@ public class menuDrivenConsole{
     }
 
     
-    public int findMin(int[] numbers)
->>>>>>> main
+    public static int findMin(int[] numbers)
     {
         int min = 101;
         for (int i : numbers) {
