@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 public class menuDrivenConsole{
     public static void main(String[] args) {
         
