@@ -1,10 +1,12 @@
 public class menuDrivenConsole{
     public static void main(String[] args) {
-        
+        int[] hello ={1,2,2,4,5,7};
+        System.out.println(findMin(hello)); 
+        System.out.println(findMax(hello)); 
     }
 
 
-    public int findMin(int[] numbers)
+    public static int findMin(int[] numbers)
     {
         int min = 101;
         for (int i : numbers) {
@@ -17,7 +19,7 @@ public class menuDrivenConsole{
         return min;
     }
 
-    public int findMax(int[] numbers)
+    public static int findMax(int[] numbers)
     {
         int max = -1;
         for (int i : numbers) {
