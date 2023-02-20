@@ -11,7 +11,7 @@ public class menuDrivenConsole{
 
         Random rand = new Random();
         
-        int[] arr = new int[10];
+        int[] arr = new int[num];
         int randNum = -1;
         
         for( int i = 0; i<arr.length; i++)
